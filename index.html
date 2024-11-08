@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="mainArea">
+            <h1 id="Place">Choose Rock, Paper, or Scissors!</h1>
+            <button class="choose" id="rock"><i class="fa-solid fa-hand-back-fist"></i></button>
+            <button class="choose" id="paper"><i class="fa-solid fa-scroll"></i></button>
+            <button class="choose" id="scissors"><i class="fa-solid fa-scissors"></i></button>
+            <h1 id="loss">
+                Lost:
+                <div class="counter-container">
+                    <p id="lossp">0</p>
+                </div>
+            </h1>
+            <div id="restart">
+                <button class="restartchoose" id="restartt">Restart</button>
+            </div>
+            <audio id="click" src="Click sound.mp3"></audio>
+            <audio src="loss sound.mp3" id="losss"></audio>
+            <audio src="normal win.mp3" id="win"></audio>
+            <audio src="draw.mp3" id="draww"></audio>
+            <h1 id="wins">
+                Won:
+                <div class="counter-container">
+                    <p id="winsp">0</p>
+                </div>
+            </h1>
+
+            <h1 id="draw">
+                Draw:
+                <div class="counter-container">
+                    <p id="drawp">0</p>
+                </div>
+            </h1>
+
+            <!-- <b id="timer"><span id="time">5</span> Seconds left</b>   timer has been commented as i have seen no point for it -->
+        </div>
+    </main>
+</body>
+</html>
